@@ -1,0 +1,205 @@
+body
+{
+	background-color : #002233;
+	color:#ffffff;
+	font: 1.2em "Calibri", sans-serif;
+}	
+
+header
+{
+	display:flex;
+	justify-content: center;
+	padding : 2%;
+	margin: 0;
+	border-bottom: black solid 1px;
+	border-color: #38444d;
+}
+
+main
+{
+	margin: 5%;
+	margin-top: 0;
+	padding: 1%;
+	border-right: black solid 1px;
+	border-left: black solid 1px;
+	border-color: #38444d;
+	background-color : #192734;
+}
+
+footer
+{
+	display:flex;
+	justify-content: center;
+}
+
+h1
+{
+	margin-left: 5%;
+}
+
+h1, h2
+{
+	color : #1da1f2;
+}
+
+a
+{
+	color: #ffa32d;
+}
+
+/************* FORMULAIRE *************/
+form
+{
+	margin-left : auto;
+	margin-right : auto;
+	padding : 1%;
+	width : 800px;
+	background-color : #253341;
+	border-radius: 5%;
+	border:solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#MyForm01 select
+{
+	width: 200px;
+	height: 30px;
+}
+
+form fieldset
+{
+	margin-top : 10px;
+}
+
+legend
+{
+	font-size: 2em;
+}
+
+label
+{
+	display: block;
+	width: 200px;
+	float : left;
+}
+
+form option
+{
+	height: 25px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 1em;
+}
+
+form option:nth-child(odd)
+{
+	background-color: #74b6d6;
+}
+
+form option:nth-child(even)
+{
+	background-color: #0f74a5;
+}
+
+/* BOUTONS */
+fieldset div input[type=button]:hover, fieldset div input[type=submit]:hover
+{
+	border-radius:10px;
+	font-style: italic;
+}
+
+fieldset div input[type=button], fieldset div input[type=submit]
+{
+	margin : 1%;
+	padding : 1%;
+	border-radius:50px;
+	width: 20%;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+input[name=reset]
+{
+	background-color: #B22222;
+}
+
+input[name=reloadBtn]
+{
+	background-color: #FFD700;
+}
+
+input[name=submitBtn]
+{
+	background-color: #32CD32;
+}
+
+
+input[type=submit]
+{
+	background-color: #32CD32;
+}
+
+fieldset div
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/************* TABLE *************/
+table
+{
+	margin-left : auto;
+	margin-right : auto;
+	padding : 1%;
+	background-color : #253341;
+	border-radius: 5%;
+	color : black;
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 50%;
+	border: solid 2px black;
+}
+
+th
+{
+	background-color: #0d5070;
+	color: #ffffff;
+	border: solid black 1px;
+	width: 50%;
+}
+
+td, tr
+{
+	border-collapse: collapse;
+	border: solid black 1px;
+}
+
+tr
+{
+	padding: 5px;
+	height : 30px;
+}
+
+table tr:nth-child(odd)
+{
+	background-color: #74b6d6;
+}
+
+table tr:nth-child(even)
+{
+	background-color: #0f74a5;
+}
+
+td
+{
+	width: 150px;
+}
+
+td:first-child
+{
+	font-weight: bold; 
+}
