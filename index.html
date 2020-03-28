@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | PersonalProject_1_LearnKanas</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/build_LearnKanas.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">PersonalProject_1_LearnKanas</div>
-      </div>
-    </div>
-  </body>
+
+<html>
+	<head>
+		<meta charset="utf8" />
+		<lang="fr" />
+		<title>Learn Kanas</title>
+		<link rel="stylesheet"  href="CSS/index.css" type="text/css" media="all" />
+		<link rel="shortcut icon" type="image/x-icon" href="Contenu/Images/champignonmario.png" />
+		<script type="text/javascript" src="JS/SubmitForm.js"> </script>
+	</head>
+
+	<body>
+		<header><img SRC="Contenu/Images/ludus.png" alt="Logo ludus/" height="30%" width="30%"></header>
+
+		<main id="main">
+			<h1>Bonjour à tous !</h1>
+			<p>
+				Cette page est destinée à contenir les différentes versions de mon jeu, Learn Kanas destiné à aider l'apprentissage les kanas japonais (et en même temps de m'obliger à faire un peu de web). Quoi qu'il en soit, je vous recommande bien évidemment d'utiliser la version la plus récente ! Par ailleurs, si vous avez des suggestions ou autre, n'hésitez pas à m'en faire part.
+			</p>
+
+			<h1>Learn Kanas</h1>
+			<ul>
+				<li>28/03/2020 - V0_9 : <a href="V0_9/V0_9.html">Cliquez ici !</a></li>
+			</ul>
+
+			<h1>MàJ à venir</h1>
+			<p>
+				Un des prochains gros éléments que je souhaite ajouter est la rejouabilité.<br />
+				Actuellement, on enchaîne les parties sans trop d'intérêt : cela va changer ! Prochainement, un système de barre de vie sera intégrer pour les Kanas. Au fur et à mesure de l'avancement d'une partie, les kanas seront de plus en plus résistants. A la fin de la partie, le joueur gagnera des pièces d'or en fonction de son score. Ces dernières pourront être dépensées pour améliorer les stats de son personnage, voire en débloquer de nouveaux. Ainsi, plus le joueur jouera et plus il pourra obtenir un score important.
+				<br /> <br />
+				Le but ultime sera alors d'ajouter un système de ladder.
+			</p>
+
+			<h1>Changelog</h1>
+			<p>
+				A venir.
+			</p>
+
+		</main>
+
+		<footer>Projet d'Olivier FRANCOIS|<a href="mailto:o.francois@ludus-academie.com" > Me contacter par mail</a></footer>
+	</body>
+
 </html>
