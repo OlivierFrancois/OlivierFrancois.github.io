@@ -1,76 +1,25 @@
 <!DOCTYPE html>
-
-<html>
-	<head>
-		<meta charset="utf8" />
-		<lang="fr" />
-		<title></title>
-		<link rel="stylesheet"  href="CSS/DiscoveringDOM.css" type="text/css" media="all" />
-		<link rel="shortcut icon" type="image/x-icon" href="Contenu/Images/champignonmario.png" />
-	</head>
-
-	<body>
-		<header><img SRC="Contenu/Images/ludus.png" alt="Logo Ludus/" height="25%" width="25%"></header>								<!-- Élément d'identification de la page -->
-		
-		<main id="main"> </main>
-		<script>
-			var isWhite = false;
-			var boardSize = 0;
-
-			function increaseSize()
-			{	
-				boardSize++;
-				if (document.getElementById("myTable"))
-				{
-					var myTable = document.getElementById("myTable");
-					var main = document.getElementById("main");
-					main.removeChild(myTable);
-				}
-
-				var myTable = document.createElement("table");
-				myTable.setAttribute("id", "myTable");
-				document.getElementById("main").appendChild(myTable);
-
-				for (var i = 0; i < boardSize; i++)
-				{
-					var myTr = document.createElement("tr");
-					document.getElementsByTagName("table")[0].appendChild(myTr);
-					
-					if (boardSize %2 ==0)
-						isWhite = !isWhite;
-					
-					for (var j=0; j < boardSize; j++)
-					{
-						var myTd = document.createElement("myTd");
-						myTd.innerHTML = "__";
-
-						if (isWhite)
-						{
-							myTd.setAttribute("class", "whiteCase");
-							myTd.style.background = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
-						}
-						else
-						{
-							myTd.setAttribute("class", "blackCase");
-							myTd.style.background = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
-						}
-
-						isWhite = !isWhite;
-						myTr.appendChild(myTd);
-					}
-
-				}	
-			}
-
-			//Create a button that add a div
-			var myButton = document.createElement("button");
-			myButton.setAttribute("type", "button");
-			myButton.setAttribute("onClick", "increaseSize()");
-			myButton.innerHTML = "Increase size";
-			document.getElementsByTagName("main")[0].appendChild(myButton);
-		</script>
-
-		<footer><a href="mailto:o.francois@ludus-academie.com" > Me contacter par mail </a></footer>		<!-- Signature/Copyright/Contact -->
-	</body>
-
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | PersonalProject_1_LearnKanas</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/build_LearnKanas.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">PersonalProject_1_LearnKanas</div>
+      </div>
+    </div>
+  </body>
 </html>

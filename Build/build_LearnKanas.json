@@ -1,0 +1,13 @@
+{
+"companyName": "FRANCOIS Olivier",
+"productName": "PersonalProject_1_LearnKanas",
+"dataUrl": "build_LearnKanas.data.unityweb",
+"wasmCodeUrl": "build_LearnKanas.wasm.code.unityweb",
+"wasmFrameworkUrl": "build_LearnKanas.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
